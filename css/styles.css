@@ -438,7 +438,7 @@ img {
     color: var(--text-gray);
     cursor: pointer;
   }
-  .navbar__menu {
+  .navbar ul{
     display: block;
     position: fixed;
     top: 40px;
@@ -459,12 +459,12 @@ img {
   #check:checked ~ ul {
     display: block;
     left: 0;
-    transition: all .3s;
     cursor: pointer;
+    transition: all .5s;
   }
 
   .main__header {
-    padding-left: 1.5rem;
+    padding-left: 3rem;
     display: block;
   }
   .hero__card {
