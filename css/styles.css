@@ -552,7 +552,8 @@ img {
     font-size: 1.1rem;
   }
   .coleccion__title {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
+    width: 100%;
   }
   .coleccion__link p {
     font-size: 1.6rem;
