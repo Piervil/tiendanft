@@ -463,6 +463,10 @@ img {
     cursor: pointer;
   }
 
+  .main__header {
+    padding-left: 1.5rem;
+    display: block;
+  }
   .hero__card {
     display: none;
   }
@@ -548,7 +552,7 @@ img {
     font-size: 1.1rem;
   }
   .coleccion__title {
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .coleccion__link p {
     font-size: 1.6rem;
