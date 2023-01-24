@@ -4,26 +4,27 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Pagina para  comprar crypto monedas">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Font -->
+  <!-- *Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
   <title>Tienda de NFT</title>
-  <!-- Css -->
+  <!-- *Css -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body id="body">
 
-  <!-- HEADER -->
+  <!-- *HEADER -->
   <header class="header">
     <div class="header__contenido header-container">
       <img class="header__logo" src="assets/newLogo.png" alt="logo Shape" width="90">
 
       <nav class="navbar">
 
-        <svg class="navbar__burguer" width="32" height="22" viewBox="0 0 32 22" fill="none"
+        <svg id="burguer" class="navbar__burguer" width="32" height="22" viewBox="0 0 32 22" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M1.77778 21.3333H30.2222C31.2 21.3333 32 20.5333 32 19.5556C32 18.5778 31.2 17.7778 30.2222 17.7778H1.77778C0.8 17.7778 0 18.5778 0 19.5556C0 20.5333 0.8 21.3333 1.77778 21.3333ZM1.77778 12.4444H30.2222C31.2 12.4444 32 11.6444 32 10.6667C32 9.68889 31.2 8.88889 30.2222 8.88889H1.77778C0.8 8.88889 0 9.68889 0 10.6667C0 11.6444 0.8 12.4444 1.77778 12.4444ZM0 1.77778C0 2.75556 0.8 3.55556 1.77778 3.55556H30.2222C31.2 3.55556 32 2.75556 32 1.77778C32 0.8 31.2 0 30.2222 0H1.77778C0.8 0 0 0.8 0 1.77778Z"
@@ -31,8 +32,8 @@
         </svg>
 
         <ul class="menu">
-          <li><a class="menu__link menu__link--select" href="index.html">Home</a></li>
-          <li><a class="menu__link" href="#discovery">Descubre</a></li>
+          <li><a class="menu__link menu__link--select" href="#body">Home</a></li>
+          <li><a class="menu__link" href="#descrubre">Descubre</a></li>
           <li><a class="menu__link" href="#btc">BTC</a></li>
           <li><a class="menu__link" href="#footer">Contactanos</a></li>
           <img class="navbar__card" src="assets/cart-icon.svg" alt="carrito de compras">
@@ -41,249 +42,294 @@
     </div>
   </header>
 
+  <div id="modal">
+    <ul class="menu-modal">
+      <li><a id="home-f" href="#body">Home</a></li>
+      <li><a id="descubre-f" href="#descrubre">Descubre</a></li>
+      <li><a id="btc-f" href="#btc">BTC</a></li>
+      <li><a id="footer-f" href="#footer">Contactanos</a></li>
+      <img class="navbar__card" src="assets/cart-icon.svg" alt="carrito de compras">
+    </ul>
+  </div>
+  <!-- *HERO -->
+  <section id="hero" class="hero-container">
+    <div class="hero__content">
 
-  <!-- <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero__flex">
-          <div class="hero__info">
-            <h1>Descubre la nueva era de Crypto</h1>
-            <p>SHAPE NFT es el primer Marketplace educativo tecnológico de NFT, que son elementos digitales épicos que
-              realmente puedes poseer. Los elementos digitales existen desde hace mucho tiempo, pero <span>Shape</span>
-              como este.</p>
-            <a href="">Ver más</a>
-          </div>
-          <div class="hero__card">
-            <img src="assets/hero/hero-card.png" alt="hero-card">
-            <div class="hero__card--text">
-              <p>The Greatest of All Time...</p>
-              <span class="hero__card--blue">10</span>
-            </div>
-            <div class="hero__card--creador">
-              <img src="assets/hero/creator.png" alt="creator">
-              <div class="hero__card--info">
-                <p>Creador</p>
-                <span>Value</span>
-              </div>
-              <div class="hero__card--eth">
-                <p>Carles </p>
-                <span>9 ETH</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="hero__informacion text-center">
+        <h1 class="hero__titulo">Descubre la nueva era de Crypto</h1>
+        <p class="hero__text">SHAPE NFT es el primer Marketplace educativo tecnológico de NFT, que son elementos
+          digitales épicos que
+          realmente puedes poseer. Los elementos digitales existen desde hace mucho tiempo, pero <span>Shape</span>
+          como este.</p>
+        <a class="hero__boton" href="#">Ver más</a>
       </div>
-    </section>
-    <section class="discovery" id="discovery">
-      <div class="container">
-        <h2>Crea, Aprende Y Comparte Los NFTs</h2>
-        <div class="discovery__flex">
-          <div class="discovery__info">
-            <img src="assets/info/info-icon.png" alt="">
-            <h3>Configura tu Wallet</h3>
-            <p>Una vez que haya configurado la billetera de su elección, conéctela a OpenSea.</p>
-          </div>
-          <div class="discovery__info">
-            <img src="assets/info/info-icon.png" alt="">
-            <h3>Agregá tus NFTs</h3>
-            <p>Una vez que haya configurado la billetera de su elección, busca los NFT de NUCBA y adquiere los que más
-              te gusten.</p>
-          </div>
-          <div class="discovery__info">
-            <img src="assets/info/info-icon.png" alt="">
-            <h3>¡Coleccionalos!</h3>
-            <p>A partir de ahora, formáis parte de la comunidad de NUCBA NFT y vas a poder acceder a contenidos
-              educativos exclusivos sobre el mundo crypto.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="coleccion">
-      <div class="container">
-        <div class="coleccion__flex">
-          <div class="coleccion__title">
-            <h3>Descubre una nueva era de colecciones</h3>
-          </div>
-          <div class="coleccion__link">
-            <p>Tendrás la oportunidad de coleccionar NFTs sobre distintos tópicos, y de este modo acceder a beneficios
-              exclusivos por tomar parte de dicho club. Ej: "Team Star Wars"</p>
-            <a href="">Empezar ahora</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="image">
-      <div class="container">
-        <div class="image__flex">
-          <img src="assets/discover/darth-vader.png" alt="darth-vader">
-          <img src="assets/discover/trooper.png" alt="trooper">
-          <img src="assets/discover/yoda.png" alt="yoda">
-        </div>
-      </div>
-    </section>
-    <section class="btc" id="btc">
-      <h2>Hot NFTs</h2>
-      <div class="container">
-        <div class="btc__flex">
-          <button>🎨Todas</button>
-          <button>⚽Futbol</button>
-          <button>🎺Música</button>
-          <button>🎬Películas</button>
-          <button>🛻Autos</button>
-          <button>💼Políticos</button>
-        </div>
-      </div>
-    </section>
-    <section class="products">
-      <div class="container">
-        <div class="products__flex">
-          <div class="products__card">
-            <img src="assets/products/alonso.png" alt="alonso">
-            <div class="products__title">
-              <h3>Golden Messi</h3>
-              <p>Current Bid</p>
-            </div>
-            <div class="products__price">
-              <div class="products__user">
-                <img src="assets/user.png" alt="user">
-                <p>@thetroncous</p>
-              </div>
-              <span>6.76ETH</span>
-            </div>
-            <div class="products__time">
-              <div class="products__buy">
-                <img src="assets/fire.png" alt="fire">
-                <span>03:15:35</span>
-              </div>
-              <button class="buy">Add</button>
-            </div>
-          </div>
-          <div class="products__card">
-            <img src="assets/products/alonso.png" alt="alonso">
-            <div class="products__title">
-              <h3>Golden Messi</h3>
-              <p>Current Bid</p>
-            </div>
-            <div class="products__price">
-              <div class="products__user">
-                <img src="assets/user.png" alt="user">
-                <p>@thetroncous</p>
-              </div>
-              <span>6.76ETH</span>
-            </div>
-            <div class="products__time">
-              <div class="products__buy">
-                <img src="assets/fire.png" alt="fire">
-                <span>03:15:35</span>
-              </div>
-              <button class="buy">Add</button>
-            </div>
-          </div>
-          <div class="products__card">
-            <img src="assets/products/alonso.png" alt="alonso">
-            <div class="products__title">
-              <h3>Golden Messi</h3>
-              <p>Current Bid</p>
-            </div>
-            <div class="products__price">
-              <div class="products__user">
-                <img src="assets/user.png" alt="user">
-                <p>@thetroncous</p>
-              </div>
-              <span>6.76ETH</span>
-            </div>
-            <div class="products__time">
-              <div class="products__buy">
-                <img src="assets/fire.png" alt="fire">
-                <span>03:15:35</span>
-              </div>
-              <button class="buy">Add</button>
-            </div>
-          </div>
-          <div class="products__card">
-            <img src="assets/products/alonso.png" alt="alonso">
-            <div class="products__title">
-              <h3>Golden Messi</h3>
-              <p>Current Bid</p>
-            </div>
-            <div class="products__price">
-              <div class="products__user">
-                <img src="assets/user.png" alt="user">
-                <p>@thetroncous</p>
-              </div>
-              <span>6.76ETH</span>
-            </div>
-            <div class="products__time">
-              <div class="products__buy">
-                <img src="assets/fire.png" alt="fire">
-                <span>03:15:35</span>
-              </div>
-              <button class="buy">Add</button>
-            </div>
-          </div>
-          <div class="products__card">
-            <img src="assets/products/alonso.png" alt="alonso">
-            <div class="products__title">
-              <h3>Golden Messi</h3>
-              <p>Current Bid</p>
-            </div>
-            <div class="products__price">
-              <div class="products__user">
-                <img src="assets/user.png" alt="user">
-                <p>@thetroncous</p>
-              </div>
-              <span>6.76ETH</span>
-            </div>
-            <div class="products__time">
-              <div class="products__buy">
-                <img src="assets/fire.png" alt="fire">
-                <span>03:15:35</span>
-              </div>
-              <button class="buy">Add</button>
-            </div>
-          </div>
-          <div class="products__card">
-            <img src="assets/products/alonso.png" alt="alonso">
-            <div class="products__title">
-              <h3>Golden Messi</h3>
-              <p>Current Bid</p>
-            </div>
-            <div class="products__price">
-              <div class="products__user">
-                <img src="assets/user.png" alt="user">
-                <p>@thetroncous</p>
-              </div>
-              <span>6.76ETH</span>
-            </div>
-            <div class="products__time">
-              <div class="products__buy">
-                <img src="assets/fire.png" alt="fire">
-                <span>03:15:35</span>
-              </div>
-              <button class="buy">Add</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="more">Ver Más</button>
-    </section>
-  </main> -->
 
+      <div class="card card--none">
+        <figure>
+          <img src="assets/hero/hero-card.png" alt="hero-card">
+        </figure>
 
-  <!-- <footer id="footer">
-    <div class="conatiner">
-      <div class="footer__flex">
-        <ul class="footer__link">
-          <li><a href="#">Términos de uso</a></li>
-          <li><a href="#">Trabaja con Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+        <div class="card__info">
+          <p>The Greatest of All Time...</p>
+          <span class="hero__card--blue">10</span>
+        </div>
+
+        <div class="card__creador">
+          <img src="assets/hero/creator.png" alt="creator">
+          <div class="hero__card--info">
+            <p>Creador</p>
+            <span>Value</span>
+          </div>
+          <div class="hero__card--eth">
+            <p>Carles </p>
+            <span>9 ETH</span>
+          </div>
+        </div>
       </div>
     </div>
-    <p class="copy">Hecho con ❤️ por <a href="https://www.linkedin.com/in/jacques-jean-piervil-474b3a191/"
-        target="_blank">Piervil Jacques</a></p>
-  </footer> -->
+  </section>
 
+  <!-- *DISCOVERY -->
+  <section class="discovery discovery-container text-center">
+    <h2 class="discovery__titulo">Crea, Aprende Y Comparte Los NFTs</h2>
+
+    <div class="discovery__content">
+      <div class="discovery__info">
+        <img src="assets/info/info-icon.png" alt="">
+        <h3>Configura tu Wallet</h3>
+        <p>Una vez que haya configurado la billetera de su elección, conéctela a OpenSea.</p>
+      </div>
+      <div class="discovery__info">
+        <img src="assets/info/info-icon.png" alt="">
+        <h3>Agregá tus NFTs</h3>
+        <p>Una vez que haya configurado la billetera de su elección, busca los NFT de NUCBA y adquiere los que más
+          te gusten.</p>
+      </div>
+      <div class="discovery__info">
+        <img src="assets/info/info-icon.png" alt="">
+        <h3>¡Coleccionalos!</h3>
+        <p>A partir de ahora, formáis parte de la comunidad de NUCBA NFT y vas a poder acceder a contenidos
+          educativos exclusivos sobre el mundo crypto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- *COLECCION -->
+  <section id="descrubre" class="coleccion coleccion-container">
+    <h2>Descubre una nueva era de colecciones</h2>
+
+    <div class="coleccion__link">
+      <p class="coleccion__text">Tendrás la oportunidad de coleccionar NFTs sobre distintos tópicos, y de este modo
+        acceder a beneficios
+        exclusivos por tomar parte de dicho club. Ej: "Team Star Wars"</p>
+    </div>
+    <a class="coleccion__enlace" href="#">Empezar ahora</a>
+  </section>
+
+  <!-- *IMAGENES -->
+  <section class="imagenes imagenes-container">
+    <div class="images__grid">
+      <img class="imagenes__img" src="assets/discover/darth-vader.png" alt="darth-vader" loading="lazy">
+      <img class="imagenes__img" src="assets/discover/trooper.png" alt="trooper" loading="lazy">
+      <img class="imagenes__img" src="assets/discover/yoda.png" alt="yoda" loading="lazy">
+    </div>
+  </section>
+
+  <!-- *PRODUCTOS -->
+  <section id="btc" class="btc btc-container text-center">
+    <h2>Hot NFTs</h2>
+
+    <div class="btc__content">
+      <button class="btn__btn btn__btn--select">🎨Todas</button>
+      <button class="btn__btn">⚽Futbol</button>
+      <button class="btn__btn">🎺Música</button>
+      <button class="btn__btn">🎬Películas</button>
+      <button class="btn__btn">🛻Autos</button>
+      <button class="btn__btn">💼Políticos</button>
+    </div>
+  </section>
+
+  <!-- * MAIN -->
+  <main class="main main-container">
+    <h2 class="main__titulo text-center">Nuestros Productos</h2>
+
+    <div class="main__productos">
+
+      <div class="card">
+        <figure>
+          <img src="assets/products/alonso.png" alt="hero-card" loading="lazy" width="250">
+        </figure>
+
+        <div class="card__creador">
+          <img src="assets/user.png" alt="creator" loading="lazy" width="40">
+          <div class="hero__card--info">
+            <p>6.76ETH</p>
+          </div>
+        </div>
+
+        <div class="card__info">
+          <p>Golden Messi</p>
+          <p class="hero__card--blue">Current Bid</p>
+        </div>
+
+        <div class="card__time">
+          <div class="card__hora">
+            <img src="assets/fire.png" alt="fire">
+            <span>03:15:35</span>
+          </div>
+          <button class="buy">Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src="assets/products/alonso.png" alt="hero-card" loading="lazy" width="250">
+        </figure>
+
+        <div class="card__creador">
+          <img src="assets/user.png" alt="creator" loading="lazy" width="40">
+          <div class="hero__card--info">
+            <p>6.76ETH</p>
+          </div>
+        </div>
+
+        <div class="card__info">
+          <p>Golden Messi</p>
+          <p class="hero__card--blue">Current Bid</p>
+        </div>
+
+        <div class="card__time">
+          <div class="card__hora">
+            <img src="assets/fire.png" alt="fire">
+            <span>03:15:35</span>
+          </div>
+          <button class="buy">Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src="assets/products/alonso.png" alt="hero-card" loading="lazy" width="250">
+        </figure>
+
+        <div class="card__creador">
+          <img src="assets/user.png" alt="creator" loading="lazy" width="40">
+          <div class="hero__card--info">
+            <p>6.76ETH</p>
+          </div>
+        </div>
+
+        <div class="card__info">
+          <p>Golden Messi</p>
+          <p class="hero__card--blue">Current Bid</p>
+        </div>
+
+        <div class="card__time">
+          <div class="card__hora">
+            <img src="assets/fire.png" alt="fire">
+            <span>03:15:35</span>
+          </div>
+          <button class="buy">Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src="assets/products/alonso.png" alt="hero-card" loading="lazy" width="250">
+        </figure>
+
+        <div class="card__creador">
+          <img src="assets/user.png" alt="creator" loading="lazy" width="40">
+          <div class="hero__card--info">
+            <p>6.76ETH</p>
+          </div>
+        </div>
+
+        <div class="card__info">
+          <p>Golden Messi</p>
+          <p class="hero__card--blue">Current Bid</p>
+        </div>
+
+        <div class="card__time">
+          <div class="card__hora">
+            <img src="assets/fire.png" alt="fire">
+            <span>03:15:35</span>
+          </div>
+          <button class="buy">Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src="assets/products/alonso.png" alt="hero-card" loading="lazy" width="250">
+        </figure>
+
+        <div class="card__creador">
+          <img src="assets/user.png" alt="creator" loading="lazy" width="40">
+          <div class="hero__card--info">
+            <p>6.76ETH</p>
+          </div>
+        </div>
+
+        <div class="card__info">
+          <p>Golden Messi</p>
+          <p class="hero__card--blue">Current Bid</p>
+        </div>
+
+        <div class="card__time">
+          <div class="card__hora">
+            <img src="assets/fire.png" alt="fire">
+            <span>03:15:35</span>
+          </div>
+          <button class="buy">Add</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <figure>
+          <img src="assets/products/alonso.png" alt="hero-card" loading="lazy" width="250">
+        </figure>
+
+        <div class="card__creador">
+          <img src="assets/user.png" alt="creator" loading="lazy" width="40">
+          <div class="hero__card--info">
+            <p>6.76ETH</p>
+          </div>
+        </div>
+
+        <div class="card__info">
+          <p>Golden Messi</p>
+          <p class="hero__card--blue">Current Bid</p>
+        </div>
+
+        <div class="card__time">
+          <div class="card__hora">
+            <img src="assets/fire.png" alt="fire">
+            <span>03:15:35</span>
+          </div>
+          <button class="buy">Add</button>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="main__more">Ver Más</button>
+  </main>
+
+  <!-- * FOOTER -->
+  <footer id="footer" class="footer text-center">
+    <ul class="footer__lista">
+      <li><a class="footer__link" href="#">Términos de uso</a></li>
+      <li><a class="footer__link" href="#">Trabaja con Nosotros</a></li>
+      <li><a class="footer__link" href="#">Contacto</a></li>
+    </ul>
+
+    <p class="copy">Hecho con ❤️ por
+      <a href="https://www.linkedin.com/in/jeancarlosatochepascual/" target="_blank">JeanCarlos Atoche Pascual</a>
+    </p>
+  </footer>
+
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
