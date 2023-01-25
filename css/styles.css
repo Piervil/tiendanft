@@ -40,9 +40,9 @@ img {
 /*== THE HEADER ==*/
 .main__header {
   background-color: var(--secondary);
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   padding: .7rem 9rem;
   position: fixed;
   top: 0;
@@ -54,9 +54,13 @@ img {
   width: 9rem;
 }
 
-.navbar {
+.container__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 
 #check, .toggle__menu {
@@ -185,7 +189,7 @@ img {
 /*== SECCIÓN DISCOVERY ==*/
 .discovery h2 {
   text-align: center;
-  padding: 9rem;
+  padding: 4rem 0;
   font-size: 3rem;
   font-weight: 800;
   background:  linear-gradient(135deg, #6699FF 0%, #FF3366 100%);
@@ -235,7 +239,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
-  padding: 9rem;
+  padding: 9rem 0;
 }
 
 .coleccion__title {
@@ -506,7 +510,7 @@ img {
     font-size: 1.6rem;
   }
   .coleccion__title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .coleccion__link p {
     font-size: 1.5rem;
@@ -524,7 +528,7 @@ img {
     font-size: 2rem;
   }
   .coleccion__title {
-    font-size: 1.7rem;
+    font-size: 2rem;
   }
   .coleccion__link p {
     font-size: 1.3rem;
@@ -550,10 +554,6 @@ img {
   }
   .discovery__info p {
     font-size: 1.1rem;
-  }
-  .coleccion__title {
-    font-size: 1.1rem;
-    width: 100%;
   }
   .coleccion__link p {
     font-size: 1.6rem;
